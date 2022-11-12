@@ -158,6 +158,9 @@ const countryName = {
 "Zimbabwe": "ZW",
 "Zambia" :	"ZM"
 }
+//login with weatherapi and get Api Key in Set Api key in Url fetch function
+//https://www.weatherapi.com/
+// search('Alex')
 async function search(city){
    let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a78d72fd50ed4fc1a66221217222410&q=${city}&days=3`)
     let  finalres = await res.json();
@@ -247,7 +250,6 @@ function dispaly(){
     </div>
 </div>`
 }
-search('Alex')
 
 function dispalyNews (){
   let catona="";
